@@ -1,3 +1,4 @@
 ini adalah tugas resume kelas qa batch 3
 git adalah sebuah tools bagi para programmer dan developer yang berfungsi sebagai control system untuk menjalankan proyek pengembangan software.
 git syntax :
+1. git config
