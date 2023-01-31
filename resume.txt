@@ -3,3 +3,4 @@ git adalah sebuah tools bagi para programmer dan developer yang berfungsi sebaga
 git syntax :
 1. git config
 2. git init
+3. git clone
