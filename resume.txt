@@ -6,3 +6,4 @@ git syntax :
 3. git clone
 4. git branch
 5. git add
+6. git commit
