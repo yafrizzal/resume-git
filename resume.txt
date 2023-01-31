@@ -10,3 +10,4 @@ git syntax :
 7. git push
 8. git pull
 9. github pull request
+10. resolve conflict
