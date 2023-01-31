@@ -7,3 +7,4 @@ git syntax :
 4. git branch
 5. git add
 6. git commit
+7. git push
