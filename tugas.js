@@ -72,11 +72,25 @@ function eliminasi (x,y,z) {
 
 console.log(eliminasi(8,14,17))
 
-const seleksinilai1 = [(15, 3 , [2, 25, 4, 14, 17, 30, 8])
+const seleksinilai1 = [(5, 20 , [2, 25, 4, 14, 17, 30, 8])
 ]
-function nilaiakhirharuslebihbesardarinilaiawal ([x,y]) {
-    let d = x
-    let e = 8
-    return [d,e]
+function compareNumbers(a, b) {
+    return a - b;
+  }
+  
+function seleksinilai001 (x,y,z){
+    let nilai = []
+    if( x>y ){
+        return "Nilai akhir harus lebih besar dari nilai awal"
+    } else {
+        z.forEach(element => {
+            if (x < element && y > element){
+                nilai.push(element)
+            }
+        })
+        let hasilsort = nilai.sort(compareNumbers)
+        return hasilsort
+    }
+   
 }
-console.log(nilaiakhirharuslebihbesardarinilaiawal([15,8]))
+console.log(seleksinilai001(15, 3 , [2, 25, 4, 14, 17, 30, 8]))
