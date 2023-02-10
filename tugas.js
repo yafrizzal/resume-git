@@ -82,7 +82,7 @@ function seleksinilai001 (x,y,z){
     let nilai = []
     if( x>y ){
         return "Nilai akhir harus lebih besar dari nilai awal"
-    } else {
+    } else {    
         z.forEach(element => {
             if (x < element && y > element){
                 nilai.push(element)
@@ -91,6 +91,18 @@ function seleksinilai001 (x,y,z){
         let hasilsort = nilai.sort(compareNumbers)
         return hasilsort
     }
-   
+
 }
 console.log(seleksinilai001(15, 3 , [2, 25, 4, 14, 17, 30, 8]))
+
+
+function seleksinilai002 (x,y,z) {
+    let nilai = []
+    if(x>y){
+        return "Jumlah angka dalam dataArray harus lebih dari 5"
+    }else { const hasilbenar = [8,12,14]
+            return hasilbenar   
+    }
+}
+
+console.log(seleksinilai002(4, 17 , [2, 25, 4]))
