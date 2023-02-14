@@ -49,3 +49,4 @@ function bilanganprima(bilangan){
     }
 }
 bilanganprima(6)
+//contoh
