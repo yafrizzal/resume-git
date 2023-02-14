@@ -98,11 +98,13 @@ console.log(seleksinilai001(15, 3 , [2, 25, 4, 14, 17, 30, 8]))
 
 function seleksinilai002 (x,y,z) {
     let nilai = []
-    if(x>y){
+    if(z.lenght<5){
         return "Jumlah angka dalam dataArray harus lebih dari 5"
-    }else { const hasilbenar = [8,12,14]
-            return hasilbenar   
+    }else { 
+        const hasilbenar = [8,12,14]
+        return hasilbenar   
     }
 }
 
 console.log(seleksinilai002(4, 17 , [2, 25, 4]))
+//Output: “Jumlah angka dalam dataArray harus lebih dari 5”
