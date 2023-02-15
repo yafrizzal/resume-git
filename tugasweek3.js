@@ -25,9 +25,9 @@ async function harikerja(x) {
     } catch (error) {
       console.log(error.message);
     }
-  }
+}
   
-  harikerja('senin');
+harikerja('senin');
 
 const getMonth = (callback) => {
     setTimeout(() => {
