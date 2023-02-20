@@ -3,10 +3,12 @@
 console.log(Math.max(5, 1, 6));
 //math.min() mengembalikan angka terkecil yang diberikan sebagai parameter masukan
 console.log(Math.min(5, 1, 6));
-// lenght untuk menghitung jumlah karakter yang ada
-const motors = [];
-motors.push("beat", "supra", "mio", "shogun");
-console.log(motors.length);
+// findIndex() metode mengembalikan indeks dari elemen pertama dalam array yang lulus tes 
+const nilaikelas = [75, 60, 80, 70];
+nilaikelas.findIndex(cekkkm);
+function cekkkm(nilai01) {
+  return nilai01 > 75;
+}  
 // concat digunakan untuk menggabungkan dua atau lebih array
 const ninja1 = ['naruto', 'sasuke', 'sakura'];
 const ninja2 = ['sino', 'kiba', 'hinata'];
@@ -60,20 +62,6 @@ console.log(searching("an", nama))
 
 //soal nomer 3
 
-const seleksinilai = [(5, 20 , [2, 25, 4, 14, 17, 30, 8])
-]
-
-function eliminasi (x,y,z) {
-    let a = x 
-    let b = 14
-    let c = 17
-    return [a,b,c]
-}
-
-console.log(eliminasi(8,14,17))
-
-const seleksinilai1 = [(5, 20 , [2, 25, 4, 14, 17, 30, 8])
-]
 function compareNumbers(a, b) {
     return a - b;
   }
@@ -93,18 +81,37 @@ function seleksinilai001 (x,y,z){
     }
 
 }
-console.log(seleksinilai001(15, 3 , [2, 25, 4, 14, 17, 30, 8]))
-
-
-function seleksinilai002 (x,y,z) {
+function compareNumbers(a, b) {
+    return a - b;
+  }
+  
+function SeleksiNilai (x,y,z){
     let nilai = []
-    if(z.lenght<5){
-        return "Jumlah angka dalam dataArray harus lebih dari 5"
-    }else { 
-        const hasilbenar = [8,12,14]
-        return hasilbenar   
+    if( x>y ){
+        return console.log("Nilai akhir harus lebih besar dari nilai awal")
+    } else if (z.length<5) {
+        return console.log("Jumlah angka dalam dataArray harus lebih dari 5")
+    } else {    
+        z.forEach(element => {
+            if (x < element && y > element){
+                nilai.push(element)
+            }
+        })
+        let hasilsort = nilai.sort(compareNumbers)
+        if (nilai.length<1){
+            return console.log("Nilai tidak ditemukan")
+
+        }
+        return console.log(hasilsort)
     }
+
 }
 
-console.log(seleksinilai002(4, 17 , [2, 25, 4]))
-//Output: “Jumlah angka dalam dataArray harus lebih dari 5”
+SeleksiNilai(5, 20 , [2, 25, 4, 14, 17, 30, 8])
+
+SeleksiNilai(15, 3 , [2, 25, 4, 14, 17, 30, 8])
+
+SeleksiNilai(4, 17 , [2, 25, 4])
+
+SeleksiNilai(5, 17 , [2, 25, 4, 1, 30, 18])
+
