@@ -66,25 +66,6 @@ function compareNumbers(a, b) {
     return a - b;
   }
   
-function seleksinilai001 (x,y,z){
-    let nilai = []
-    if( x>y ){
-        return "Nilai akhir harus lebih besar dari nilai awal"
-    } else {    
-        z.forEach(element => {
-            if (x < element && y > element){
-                nilai.push(element)
-            }
-        })
-        let hasilsort = nilai.sort(compareNumbers)
-        return hasilsort
-    }
-
-}
-function compareNumbers(a, b) {
-    return a - b;
-  }
-  
 function SeleksiNilai (x,y,z){
     let nilai = []
     if( x>y ){
